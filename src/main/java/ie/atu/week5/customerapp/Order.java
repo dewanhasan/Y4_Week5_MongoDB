@@ -12,7 +12,11 @@ public class Order {
     @Id
     private String id;
     private int orderCode;
+    @NotBlank (message = "name cannot be null")
     private String orderDetails;
+
+    @NotBlank (message = "name cannot be null")
     private String orderDate;
+
     private String customerId; // Reference to the associated customer
 }
